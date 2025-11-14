@@ -1,0 +1,306 @@
+/*OOOOOOOOOOOOO COISA BOOOOAAAAA*/
+/*Nos nao sabemos centralizar div :) */
+
+.esp-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #a36c43;
+    border-radius: 25px;
+    padding: 30px 40px;
+    width: 900px;
+    min-height: 480px;
+    margin: 150px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.esp-contato-intro {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: #fff8e7;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+.esp-contato-intro h1 {
+    font-size: 40PX;
+    color: #8b4513;
+    margin-bottom: 6px;
+}
+
+.esp-contato-intro p {
+    color: #6a4a2e;
+    font-size: 17PX;
+}
+
+.esp-contato-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.esp-contato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+    gap: 20px;
+    background-color: #fff8e7;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 0 0 8px rgba(139, 69, 19, 0.08);
+}
+
+.esp-contato-info h2 {
+    color: #8b4513;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.esp-contato-info p {
+    margin-bottom: 10px;
+    color: #6a4a2e;
+}
+
+.escritas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.escritas span{
+    color: #8b4513;
+    font-weight: 700;
+}
+
+.esp-contato-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.12);
+}
+
+.esp-contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.esp-contato-form label {
+    font-weight: bold;
+    color: #8b4513;
+    margin-bottom: 3px;
+}
+
+.esp-contato-form input, .esp-contato-form textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px 12px;
+    border: 1px solid #d0bfae;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fffdfb;
+    transition: 0.2s;
+}
+
+.esp-contato-form input:focus, .esp-contato-form textarea:focus {
+    border-color: #8b4513;
+    outline: none;
+    box-shadow: 0 0 6px rgba(139, 69, 19, 0.2);
+}
+
+.esp-contato-form button {
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.esp-contato-form button:hover {
+    background-color: #a35a20;
+    transform: scale(1.02);
+}
+
+
+.agradecimento {
+    background-color: #fffaf3;
+    border: 2px solid #d1b78c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.589);
+    text-align: center;
+}
+
+.agradecimento h2{
+    color: #6b4b2e;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.agradecimento p {
+    margin-top: 10px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.agradecimento span{
+    color: #cda87c;
+}
+
+.btn-fechar{
+    margin-bottom: 20px;
+    background-color: #6b8e23;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.281);
+    color: #fff;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.btn-fechar:hover{
+    background: #557718;
+}
+
+.tela-blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(189, 171, 154, 0.24);
+    backdrop-filter: blur(5px);
+    z-index: 998;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-blur.boo{
+    display: flex;
+}
+
+#botao.nao{
+    background-color: #95998c;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#msg {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    animation: fadeIn 0.4s ease;
+}
+
+#msg.erro {
+    display: block;
+    background-color: #ffebeb;
+    color: #b40000;
+    border: 1px solid #d25b5b;
+
+}
+
+#msg.acerto {
+    display: block;
+    background-color: #e9ffe9;
+    color: #2e7d32;
+    border: 1px solid #6b8e23;
+
+}
+
+@media (max-width: 992px) {
+    .esp-contato {
+        width: 90%;
+        padding: 25px;
+        margin: 120px auto;
+    }
+
+    .esp-contato-infos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .esp-contato-form,
+    .esp-contato-info {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .esp-contato {
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+    .esp-contato-intro h1 {
+        font-size: 32px;
+    }
+
+    .esp-contato-intro p {
+        font-size: 15px;
+    }
+
+    .agradecimento{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .esp-contato {
+        margin: 80px auto;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .esp-contato-intro h1 {
+        font-size: 26px;
+    }
+
+    .esp-contato-infos {
+        gap: 20px;
+    }
+
+    .esp-contato-form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .esp-contato-form input,
+    .esp-contato-form textarea {
+        font-size: 0.9rem;
+    }
+}

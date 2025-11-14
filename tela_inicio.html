@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--Desnvolvido por
+    Miguel França e Luis Otávio
+    1°DS    Esperamos que goste...-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes da Natureza - Artesanato Indígena</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="shortcut icon" href="img/logos/logo-sem-fundo.png">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="logo-header">
+            <img src="img/logos/logo-sem-fundo.png" alt="Raízes da Natureza">
+            <div class="logo-escrita-header">
+                <h3>Raízes da Natureza</h3>
+                <h4>Vestimentas e produtos indígenas</h4>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-list" id="sopataqui">
+                <li><a href="tela_inicio.html">Início</a></li>
+                <li><a href="tela_produtos.html">Produtos</a></li>
+                <li><a href="tela_cultura.html">Cultura</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="tela_contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="btns">
+
+
+            <a href="index.html">
+                <button id="entrar">Entrar</button>
+            </a>
+            <a href="tela_carrinho.html" id="carrinho">
+                <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+            </a>
+        </div>
+
+        <div class="hamb">
+            <button onclick="menuShow()"><img class="icon-menu" src="img/icones/menu.png" alt=""></button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-iten"><a href="tela_inicio.html">Início</a></li>
+                <li class="nav-iten"><a href="tela_produtos.html">Produtos</a></li>
+                <li class="nav-iten"><a href="tela_cultura.html">Cultura</a></li>
+                <li class="nav-iten"><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li class="nav-iten"><a href="tela_contato.html">Contato</a></li>
+            </ul>
+
+            <div class="btns">
+
+
+                <a href="index.html">
+                    <button id="entrar">Entrar</button>
+                </a>
+                <a href="tela_carrinho.html" id="carrinho">
+                    <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <div class="tela-blur" id="obrigado">
+            <div class="agradecimento">
+                <h2>Bem-vindo ao Raízes da Natureza!</h2>
+                <p>Este site foi criado por <span>Miguel França</span> e <span>Luis Otávio</span>, estudantes do curso
+                    de <span>Desenvolvimento de Sistemas</span> da ETEC</p>
+                <p>
+                    Prometemos que o site é 90% amor e 10% “funciona na minha máquina”.</p>
+                <p>Aproveite a visita e explore cada cantinho deste projeto feito com carinho e dedicação.</p>
+                <button class="btn-fechar" onclick="esconderMensagem()">Fechar</button>
+            </div>
+
+        </div>
+        <section class="intro">
+            <div class="conteudo">
+                <p class="btn-verde">Autêntica cultura indígena Brasileiras</p>
+                <h1>Descubra as <span class="intro-destaque">Raízes da Natureza</span></h1>
+                <p class="mini_txt">
+                    Conecte-se com a rica tradição indígena brasileira através de produtos artesanais únicos,
+                    criados com técnicas ancestrais e materiais naturais.
+                </p>
+
+                <div class="botoes-intro">
+                    <a href="tela_produtos.html"><button class="btn-marrom">Explorar produtos →</button></a>
+                    <a href="tela_cultura.html"><button class="btn-claro">Conhecer a Cultura</button></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-cards">
+            <div class="eps-cards">
+                <div class="card">
+
+                    <div class="card-img" id="icon-folha">
+                        <img src="img/icones/icon-folha.png" alt="Ícone natural">
+                    </div>
+
+                    <h2>100% Natural</h2>
+                    <p>Produtos feitos com materiais naturais e técnicas tradicionais sustentáveis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" id="icon-comunidade">
+                        <img src="img/icones/icon-comunidade.png" alt="Ícone comunidade">
+                    </div>
+                    <h2>Apoio às Comunidades</h2>
+                    <p>Cada compra apoia diretamente as comunidades indígenas brasileiras.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" id="icon-coracao">
+                        <img src="img/icones/icon-coracao.png" alt="Ícone coração">
+                    </div>
+                    <h2>Feito com Amor</h2>
+                    <p>Cada peça carrega a história e o carinho de quem a criou.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="inicio-destaques">
+            <div class="inicio-destaques-escrita">
+                <h2>Produtos em Destaque</h2>
+                <p>Descubra nossa seleção especial de produtos artesanais indígenas</p>
+
+            </div>
+
+            <div class="destaques">
+
+
+                <article class="card-desque" id="tatu">
+                    <div class="card-destaque-img">
+                        <img src="img/produtos/prod 6/img 1.webp" alt="Tamanduá de Cerâmica | Waurá">
+                    </div>
+                    <h3>Tamanduá de Cerâmica | Waurá</h3>
+                    <p>R$ 168,00</p>
+                    <button>Ver produto</button>
+                </article>
+
+
+
+
+                <article class="card-desque" id="cesta">
+                    <div class="card-destaque-img">
+                        <img src="img/produtos/prod 3/img 1.webp" alt="Cesta de Palha Trançada">
+                    </div>
+                    <h3>Cesto Wii -Yanomami</h3>
+                    <p>R$ 299,90</p>
+                    <button>Ver produto</button>
+                </article>
+
+
+
+                <article class="card-desque" id="rede">
+                    <div class="card-destaque-img">
+                        <img src="img/produtos/prod 5/img 1.webp" alt="Rede de Tecelagem - Guajajara">
+                    </div>
+                    <h3>Rede de Tecelagem - Guajajara</h3>
+                    <p>R$ 1.808,90</p>
+                    <button>Ver produto</button>
+                </article>
+
+
+            </div>
+
+
+            <a href="tela_produtos.html"><button class="btn-claro">Ver Todos os Produtos →</button></a>
+        </section>
+
+        </section>
+
+        <section class="conteudo_cultura">
+            <div class="texto_cultura">
+                <p class="bt-verde"><span class="brc">Cultura Indígena</span></p>
+                <h1><span class="destaque_corbosta">Preservando Tradições Milenares</span></h1>
+                <p>
+                    Cada produto em nossa loja conta uma história. Conheça as tradições,
+                    técnicas e significados por trás dos artesanatos indígenas brasileiros.
+                </p>
+                <ul>
+                    <li>História dos povos originários</li>
+                    <li>Técnicas ancestrais de produção</li>
+                    <li>Significados culturais e espirituais</li>
+                </ul>
+                <a href="tela_cultura.html"><button class="btn-marrom">Explorar as culturas →</button></a>
+            </div>
+
+            <div class="imagem_cultura">
+                <img src="img/indio_IA.jpg" alt="Cultura indígena">
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="foot-dentro">
+            <div class="link-rapido">
+                <h3>Raízes da Natureza</h3>
+                <p>Conectando você com a autenticidade do artesanato indígena brasileiro. Preservando recursos e
+                    apoiando comunidades.</p>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="tela_inicio.html">Início</a></li>
+                    <li><a href="tela_produtos.html">Produtos</a></li>
+                    <li><a href="tela_cultura.html">Cultura</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Contato</h4>
+                <p>Marília, SP, Brasil</p>
+                <p>(14) 99999-9999</p>
+                <p><a href="tela_contato.html">contato@raizesdanatureza.com.br</a></p>
+            </div>
+        </div>
+        <div class="chao">
+            <p>© 2025 Raízes da Natureza. Todos os direitos reservados.</p>
+            <p>Desenvolvido com respeito à cultura indígena brasileira</p>
+        </div>
+    </footer>
+
+    <script src="js/sla.js"></script>
+    <script src="js/inicio.js"></script>
+
+
+
+</body>
+
+</html>

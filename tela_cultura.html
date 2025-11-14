@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!--Desnvolvido por
+    Miguel França e Luis Otávio
+    1°DS    Esperamos que goste...-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Indígena - Raízes da Natureza</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cultura.css">
+    <link rel="shortcut icon" href="img/logos/logo-sem-fundo.png">
+</head>
+
+<body>
+
+    <header id="topo">
+        <div class="logo-header">
+            <img src="img/logos/logo-sem-fundo.png" alt="Raízes da Natureza">
+            <div class="logo-escrita-header">
+                <h3>Raízes da Natureza</h3>
+                <h4>Vestimentas e produtos indígenas</h4>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-list" id="sopataqui">
+                <li><a href="tela_inicio.html">Início</a></li>
+                <li><a href="tela_produtos.html">Produtos</a></li>
+                <li><a href="tela_cultura.html">Cultura</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="tela_contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="btns">
+
+
+            <a href="index.html">
+                <button id="entrar">Entrar</button>
+            </a>
+            <a href="tela_carrinho.html" id="carrinho">
+                <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+            </a>
+        </div>
+
+        <div class="hamb">
+            <button onclick="menuShow()"><img class="icon-menu" src="img/icones/menu.png" alt=""></button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-iten"><a href="tela_inicio.html">Início</a></li>
+                <li class="nav-iten"><a href="tela_produtos.html">Produtos</a></li>
+                <li class="nav-iten"><a href="tela_cultura.html">Cultura</a></li>
+                <li class="nav-iten"><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li class="nav-iten"><a href="tela_contato.html">Contato</a></li>
+            </ul>
+
+            <div class="btns">
+
+
+                <a href="index.html">
+                    <button id="entrar">Entrar</button>
+                </a>
+                <a href="tela_carrinho.html" id="carrinho">
+                    <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="conteudo">
+                <p class="btn-verde">Cultura indígena brasileira</p>
+                <h1>Preservando <span class="intro-destaque">Tradições Milenares</span></h1>
+                <p class="mini_txt">Descubra a riqueza cultural dos povos originários do Brasil. Conheça suas tradições,
+                    técnicas artesanais e sabedoria ancestral que resistem ao tempo e continuam vivas.</p>
+                <div class="botoes-intro">
+                    <a href="tela_produtos.html"><button class="btn-marrom">Explorar produtos →</button></a>
+                    <a href="tela_cultura.html"><button class="btn-claro">Saiba mais sobre nós</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cultura-dados">
+            <article class="dados">
+                <div class="dado">
+                    <h2>305</h2>
+                    <p>Povos Indígenas</p>
+                </div>
+
+                <div class="dado">
+                    <h2>274</h2>
+                    <p>Línguas Faladas</p>
+                </div>
+
+                <div class="dado">
+                    <h2>13%</h2>
+                    <p>do Território Nacional</p>
+                </div>
+
+                <div class="dado">
+                    <h2>896K</h2>
+                    <p>População Indígena</p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="cultura-cards">
+            <div class="cultura-cards-escrita">
+                <h2>Explore a Cultura</h2>
+                <p>Mergulhe nos diferentes aspectos da rica cultura indígena brasileira</p>
+            </div>
+
+            <div class="eps-cards">
+                <article class="card">
+                    <div class="card-img" id="icon-livro">
+                        <img src="img/icones/icon-livro.png" alt="História indígena">
+                    </div>
+
+                    <h3>História</h3>
+                    <p>Conheça a história dos povos originários do Brasil</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-img" id="icon-comunidade">
+                        <img src="img/icones/icon-comunidade.png" alt="Diversidade de povos">
+                    </div>
+
+                    <h3>Povos</h3>
+                    <p>Descubra a diversidade dos povos indígenas</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-img" id="icon-aquarela">
+                        <img src="img/icones/icon-aquarela.png" alt="Artesanato indígena">
+                    </div>
+
+                    <h3>Artesanato</h3>
+                    <p>Técnicas ancestrais de produção artesanal</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-img" id="icon-folha">
+                        <img src="img/icones/icon-folha.png" alt="Sustentabilidade indígena">
+                    </div>
+
+                    <h3>Sustentabilidade</h3>
+                    <p>Sabedoria ancestral sobre meio ambiente</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-povos">
+            <div class="section-povos-escrita">
+                <h2>Povos indígenas</h2>
+                <p>Conheça a diversidade dos povos originários</p>
+            </div>
+
+            <div class="povos">
+                <article class="card-povo">
+                    <div class="card-povo-img">
+                        <img src="img/povos/Guarani.jpg" alt="Povo Guarani">
+                    </div>
+
+                    <h3>Guarani</h3>
+                    <h6>Sul e Sudeste</h6>
+                    <p>Os Guarani são um dos povos indígenas mais numerosos do Brasil, conhecidos por sua rica tradição
+                        espiritual e artesanal. Habitam...</p>
+                    <div class="povos-card-info">
+                        <p>85.000 pessoas</p>
+                        <a href="ex_povo-guarani.html" class="card-povos-btn">Saiba mais →</a>
+
+                    </div>
+                </article>
+
+                <article class="card-povo">
+                    <div class="card-povo-img">
+                        <img src="img/povos/kayapo.jpg" alt="Povo Kayapó">
+                    </div>
+
+                    <h3>Kayapó</h3>
+                    <h6>Amazônia</h6>
+                    <p>Os Kayapó são conhecidos por sua organização social complexa e por serem grandes defensores da
+                        floresta amazônica. Suas tradições incluem...</p>
+                    <div class="povos-card-info">
+                        <p>12.000 pessoas</p>
+                        <a href="povo-kayapo.html" class="card-povos-btn">Saiba mais →</a>
+                    </div>
+                </article>
+
+                <article class="card-povo">
+                    <div class="card-povo-img">
+                        <img src="img/povos/yanomami.jpg" alt="Povo Yanomami">
+                    </div>
+
+                    <h3>Yanomami</h3>
+                    <h6>Amazônia</h6>
+                    <p>Os Yanomami formam o maior grupo indígena isolado das Américas. Vivem em harmonia com a floresta
+                        amazônica e possuem um sistema social...</p>
+                    <div class="povos-card-info">
+                        <p>28.000 pessoas</p>
+                        <a href="povo-yanomami.html" class="card-povos-btn">Saiba mais →</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="cultura-fim">
+            <div class="espaco-daora">
+                <h2>Apoie a Cultura Indígena</h2>
+                <p>Ao adquirir nossos produtos, você contribui diretamente para a preservação das tradições e o sustento
+                    das
+                    comunidades indígenas.</p>
+
+                <div class="espaco-daora-btns">
+                    <a href="tela_produtos.html"><button class="btn-verde" id="add-btn-verde">Ver produtos
+                            artesanais</button></a>
+                    <a href="sobre_nos.html"><button class="btn-claro" id="add-btn-claro">Saiba mais sobre
+                            nós</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-dentro">
+            <div class="link-rapido">
+                <h3>Raízes da Natureza</h3>
+                <p>Conectando você com a autenticidade do artesanato indígena brasileiro. Preservando recursos e
+                    apoiando comunidades.</p>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="tela_inicio.html">Início</a></li>
+                    <li><a href="tela_produtos.html">Produtos</a></li>
+                    <li><a href="tela_cultura.html">Cultura</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Contato</h4>
+                <p>Marília, SP, Brasil</p>
+                <p>(14) 99999-9999</p>
+                <p><a href="tela_contato.html">contato@raizesdanatureza.com.br</a></p>
+            </div>
+        </div>
+        <div class="chao">
+            <p>© 2025 Raízes da Natureza. Todos os direitos reservados.</p>
+            <p>Desenvolvido com respeito à cultura indígena brasileira</p>
+        </div>
+    </footer>
+
+    <script src="js/sla.js"></script>
+
+</body>
+
+</html>

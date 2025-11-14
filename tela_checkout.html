@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!--Desnvolvido por
+    Miguel França e Luis Otávio
+    1°DS    Esperamos que goste...-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Raízes da Natureza</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dinheiro.css">
+    <link rel="shortcut icon" href="img/logos/logo-sem-fundo.png">
+</head>
+
+<body>
+
+    <header id="topo">
+        <div class="logo-header">
+            <img src="img/logos/logo-sem-fundo.png" alt="Raízes da Natureza">
+            <div class="logo-escrita-header">
+                <h3>Raízes da Natureza</h3>
+                <h4>Vestimentas e produtos indígenas</h4>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-list" id="sopataqui">
+                <li><a href="tela_inicio.html">Início</a></li>
+                <li><a href="tela_produtos.html">Produtos</a></li>
+                <li><a href="tela_cultura.html">Cultura</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="tela_contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="btns">
+
+
+            <a href="index.html">
+                <button id="entrar">Entrar</button>
+            </a>
+            <a href="tela_carrinho.html" id="carrinho">
+                <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+            </a>
+        </div>
+
+        <div class="hamb">
+            <button onclick="menuShow()"><img class="icon-menu" src="img/icones/menu.png" alt=""></button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-iten"><a href="tela_inicio.html">Início</a></li>
+                <li class="nav-iten"><a href="tela_produtos.html">Produtos</a></li>
+                <li class="nav-iten"><a href="tela_cultura.html">Cultura</a></li>
+                <li class="nav-iten"><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li class="nav-iten"><a href="tela_contato.html">Contato</a></li>
+            </ul>
+
+            <div class="btns">
+
+
+                <a href="index.html">
+                    <button id="entrar">Entrar</button>
+                </a>
+                <a href="tela_carrinho.html" id="carrinho">
+                    <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="tela-blur" id="obrigado">
+            <div class="agradecimento">
+                <h2>Obrigado por estar aqui!</h2>
+                <p>Este site é um projeto escolar desenvolvido por <span>Miguel
+                        França</span> e <span>Luis Otávio</span>, alunos do 1°DS da ETEC.</p>
+                <p>Agradecemos imensamente sua presença e apoio! 💚</p>
+                <button class="btn-fechar" onclick="esconderMensagem()">Fechar</button>
+            </div>
+
+        </div>
+
+
+        <section class="checkout-container" class="fadeOut">
+            <div class="checkout-left">
+
+                <div class="form-section">
+                    <h2 class="form-title">Dados Pessoais</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nome">Nome completo*</label>
+                            <input id="nome" type="text" class="respostas" placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input id="email" type="email" class="respostas" placeholder="seuemail@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone*</label>
+                            <input id="telefone" type="tel" class="respostas" placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF*</label>
+                            <input id="cpf" type="text" class="respostas" placeholder="000.000.000-00">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="form-title">Endereço de Entrega</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="cep">CEP*</label>
+                            <input id="cep" type="text" class="respostas" placeholder="00000-000">
+                        </div>
+                        <div class="form-group">
+                            <label for="rua">Rua/Avenida*</label>
+                            <input id="rua" type="text" class="respostas" placeholder="Nome da rua">
+                        </div>
+                        <div class="form-group">
+                            <label for="numero">Número*</label>
+                            <input id="numero" type="text" class="respostas" placeholder="123">
+                        </div>
+                        <div class="form-group">
+                            <label for="complemento">Complemento</label>
+                            <input id="complemento" type="text" class="respostas" placeholder="Apto, casa, etc.">
+                        </div>
+                        <div class="form-group">
+                            <label for="bairro">Bairro*</label>
+                            <input id="bairro" type="text" class="respostas" placeholder="Nome do bairro">
+                        </div>
+                        <div class="form-group">
+                            <label for="cidade">Cidade*</label>
+                            <input id="cidade" type="text" class="respostas" placeholder="Nome da cidade">
+                        </div>
+                        <div class="form-group">
+                            <label for="estado">Estado*</label>
+                            <select id="estado">
+                                <option value="">Selecione</option>
+                                <option>AC</option>
+                                <option>AL</option>
+                                <option>AP</option>
+                                <option>AM</option>
+                                <option>BA</option>
+                                <option>CE</option>
+                                <option>DF</option>
+                                <option>ES</option>
+                                <option>GO</option>
+                                <option>MA</option>
+                                <option>MT</option>
+                                <option>MS</option>
+                                <option>MG</option>
+                                <option>PA</option>
+                                <option>PB</option>
+                                <option>PR</option>
+                                <option>PE</option>
+                                <option>PI</option>
+                                <option>RJ</option>
+                                <option>RN</option>
+                                <option>RS</option>
+                                <option>RO</option>
+                                <option>RR</option>
+                                <option>SC</option>
+                                <option>SP</option>
+                                <option>SE</option>
+                                <option>TO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="form-title">Forma de Pagamento</h2>
+                    <div class="pagamento-options">
+                        <label class="pagamento-opcao">
+                            <input type="radio" class="radio" name="pagamento">
+                            <img src="img/icones/pix.png" alt="Pix">
+                            <span>Pix</span>
+                        </label>
+                        <label class="pagamento-opcao">
+                            <input type="radio" class="radio" name="pagamento">
+                            <img src="img/icones/cartao.png" alt="Cartão">
+                            <span>Cartão</span>
+                        </label>
+                        <label class="pagamento-opcao">
+                            <input type="radio" class="radio" name="pagamento">
+                            <img src="img/icones/Boleto.webp" alt="Boleto">
+                            <span>Boleto</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="checkout-right">
+                <div class="resumo-pedido">
+                    <h3>Resumo do Pedido</h3>
+                    <div class="linha-resumo">
+                        <span>Subtotal</span><span id="subzin"></span>
+                    </div>
+                    <div class="linha-resumo">
+                        <span>Frete</span><span >Grátis</span>
+                    </div>
+                    <div class="linha-resumo total">
+                        <span>Total</span><span id="total"></span>
+                    </div>
+                    <button class="btn-finalizar" id="but">Finalizar Compra</button>
+                </div>
+                <p id="msg">ola</p>
+            </aside>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="foot-dentro">
+            <div class="link-rapido">
+                <h3>Raízes da Natureza</h3>
+                <p>Conectando você com a autenticidade do artesanato indígena brasileiro. Preservando recursos e
+                    apoiando comunidades.</p>
+            </div>
+            <div class="link-rapido">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="tela_inicio.html">Início</a></li>
+                    <li><a href="tela_produtos.html">Produtos</a></li>
+                    <li><a href="tela_cultura.html">Cultura</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="link-rapido">
+                <h4>Contato</h4>
+                <p>Marília, SP, Brasil</p>
+                <p>(14) 99999-9999</p>
+                <p><a href="tela_contato.html">contato@raizesdanatureza.com.br</a></p>
+            </div>
+        </div>
+        <div class="chao">
+            <p>© 2025 Raízes da Natureza. Todos os direitos reservados.</p>
+            <p>Desenvolvido com respeito à cultura indígena brasileira</p>
+        </div>
+
+    </footer>
+
+    <script src="js/sla.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>

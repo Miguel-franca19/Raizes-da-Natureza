@@ -1,0 +1,456 @@
+/*galera da tribo */
+.cultura-dados {
+    border-bottom: 1px solid #A36C43;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.dados {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1500px;
+
+}
+
+.dado {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.dado h2 {
+    color: #A35922;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.dado p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.cultura-cards {
+    display: block;
+    border-bottom: 1px solid #a36c43;
+
+}
+
+.cultura-cards-escrita {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cultura-cards-escrita h2 {
+    color: #8b4513;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.cultura-cards-escrita p {
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.section-povos {
+    background-color: #f7f5e6;
+    border-bottom: 1px solid #a36c43;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-povos h2 {
+    color: #8b4513;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.section-povos p {
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.povos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card-povo {
+    background: #FFFFFF;
+    border-radius: 18px;
+    ;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 433px;
+    height: 650px;
+    transition: 0.3s;
+    text-align: center;
+    border: 1px solid #A36C43
+}
+
+
+.card-povo:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-povo-img {
+    width: 432px;
+    height: 416px;
+    border-bottom: 1px solid #a36c43;
+}
+
+.card-povo-img img {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+
+.card-povo h3 {
+    font-weight: bold;
+    color: #8b4513;
+    font-size: 30px;
+    margin-bottom: 5px;
+
+}
+
+.card-povo h6 {
+    color: #AC7E5C;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+}
+
+.card-povo p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 15px;
+
+}
+
+.povos-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-radius: 0 0 16px 16px;
+}
+
+
+
+
+.povos-card-info p {
+    color: #AC7E5C;
+    text-decoration: underline;
+
+}
+
+.card-povos-btn {
+    background-color: #8B4513;
+    color: #fff;
+    border: 1px solid #c8753a;
+    border-radius: 12px;
+    padding: 5px 8px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 2px 2px 4px #0000003d;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
+.card-povos-btn:hover {
+    background-color: #bc8055;
+    border-color: #8B4513;
+    color: #000;
+    transform: scale(1.03);
+}
+
+.card-povos-btn:active {
+    transform: scale(0.9);
+}
+
+.cultura-fim {
+    display: flex;
+    background-color: #FAF7F0;
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.espaco-daora {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #8B4513, #6B8E23);
+    border: 1px solid #C4A083;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+    color: white;
+}
+
+.espaco-daora h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.espaco-daora p {
+    font-size: 25px;
+    max-width: 900px;
+}
+
+.espaco-daora-btns {
+    display: flex;
+    gap: 400px;
+    margin-top: 30px;
+}
+
+#add-btn-verde:hover {
+    background-color: #90b150;
+    color: #000;
+    transform: scale(1.03);
+    transition: 0.3s;
+
+}
+
+#add-btn-verde:active {
+    transform: scale(0.9);
+}
+
+#add-btn-claro {
+    color: white;
+}
+
+#add-btn-claro:hover {
+    color: #000;
+
+}
+
+
+@media (max-width: 1024px) {
+    .cultura-dados {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .dados {
+        gap: 60px;
+    }
+
+    .dado h2 {
+        font-size: 40px;
+    }
+
+    .dado p {
+        font-size: 22px;
+    }
+
+    .cultura-cards-escrita h2 {
+        font-size: 40px;
+    }
+
+    .section-povos h2 {
+        font-size: 40px;
+    }
+
+    .card-povo {
+        width: 350px;
+        height: auto;
+    }
+
+    .card-povo-img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .espaco-daora {
+        width: 90%;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .espaco-daora h2 {
+        font-size: 34px;
+    }
+
+    .espaco-daora p {
+        font-size: 20px;
+        max-width: 700px;
+    }
+
+    .espaco-daora-btns {
+        gap: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .cultura-dados {
+        padding: 30px 10px;
+    }
+
+    .dados {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .dado h2 {
+        font-size: 36px;
+    }
+
+    .dado p {
+        font-size: 20px;
+    }
+
+    .cultura-cards-escrita h2 {
+        font-size: 32px;
+    }
+
+    .cultura-cards-escrita p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .eps-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .section-povos {
+        padding: 40px 10px;
+    }
+
+    .section-povos h2 {
+        font-size: 34px;
+    }
+
+    .povos {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-povo {
+        width: 70%;
+    }
+
+    .card-povo-img {
+        height: 280px;
+    }
+
+    .card-povo h3 {
+        font-size: 26px;
+    }
+
+    .card-povo p {
+        font-size: 14px;
+    }
+
+    .espaco-daora {
+        padding: 30px 20px;
+        width: 95%;
+    }
+
+    .espaco-daora h2 {
+        font-size: 28px;
+    }
+
+    .espaco-daora p {
+        font-size: 18px;
+    }
+
+    .espaco-daora-btns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .espaco-daora-btns button {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .dado h2 {
+        font-size: 30px;
+    }
+
+    .dado p {
+        font-size: 18px;
+    }
+
+    .cultura-cards-escrita h2 {
+        font-size: 28px;
+    }
+
+    .section-povos h2 {
+        font-size: 28px;
+    }
+
+    .card-povo {
+        width: 95%;
+    }
+
+    .card-povo-img {
+        height: 220px;
+    }
+
+    .card-povo h3 {
+        font-size: 22px;
+    }
+
+    .card-povo p {
+        font-size: 13px;
+    }
+
+    .espaco-daora {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .espaco-daora h2 {
+        font-size: 24px;
+    }
+
+    .espaco-daora p {
+        font-size: 16px;
+    }
+
+    .espaco-daora-btns {
+        gap: 15px;
+    }
+
+    .espaco-daora-btns button {
+        font-size: 15px;
+        padding: 8px;
+    }
+}

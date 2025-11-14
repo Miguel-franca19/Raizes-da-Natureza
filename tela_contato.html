@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!--Desnvolvido por
+    Miguel França e Luis Otávio
+    1°DS    Esperamos que goste...-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Raízes da Natureza</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contatinho.css">
+    <link rel="shortcut icon" href="img/logos/logo-sem-fundo.png">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="logo-header">
+            <img src="img/logos/logo-sem-fundo.png" alt="Raízes da Natureza">
+            <div class="logo-escrita-header">
+                <h3>Raízes da Natureza</h3>
+                <h4>Vestimentas e produtos indígenas</h4>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-list" id="sopataqui">
+                <li><a href="tela_inicio.html">Início</a></li>
+                <li><a href="tela_produtos.html">Produtos</a></li>
+                <li><a href="tela_cultura.html">Cultura</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="tela_contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="btns">
+
+
+            <a href="index.html">
+                <button id="entrar">Entrar</button>
+            </a>
+            <a href="tela_carrinho.html" id="carrinho">
+                <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+            </a>
+        </div>
+
+        <div class="hamb">
+            <button onclick="menuShow()"><img class="icon-menu" src="img/icones/menu.png" alt=""></button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-iten"><a href="tela_inicio.html">Início</a></li>
+                <li class="nav-iten"><a href="tela_produtos.html">Produtos</a></li>
+                <li class="nav-iten"><a href="tela_cultura.html">Cultura</a></li>
+                <li class="nav-iten"><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li class="nav-iten"><a href="tela_contato.html">Contato</a></li>
+            </ul>
+
+            <div class="btns">
+
+
+                <a href="index.html">
+                    <button id="entrar">Entrar</button>
+                </a>
+                <a href="tela_carrinho.html" id="carrinho">
+                    <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="tela-blur" id="obrigado">
+            <div class="agradecimento">
+                <h2>Mensagem enviada!</h2>
+                <p>Bom... ela não vai chegar exatamente até a gente kkkkkk — mas valeu pela intenção!</p>
+                <p>Este é apenas um projeto escolar feito com muito carinho (e um pouquinho de desespero) 💚</p>
+                <p>Mesmo assim, esperamos que sua experiência por aqui tenha sido incrível</p>
+                <p>Obrigado pela participação!!</p>
+                <button class="btn-fechar" onclick="esconderMensagem()">Fechar</button>
+            </div>
+
+
+        </div>
+        <section class="esp-contato">
+            <article class="esp-contato-intro">
+                <h1>Contato</h1>
+                <p>Deixe-nos saber como podemos melhorar a sua experiência</p>
+            </article>
+
+            <div class="esp-contato-infos">
+                <article class="esp-contato-form">
+                    <form>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" class="respostas" placeholder="contato@raizesdanatureza.com.br">
+                        </div>
+
+                        <div>
+                            <label for="Telefone">Telefone</label>
+                            <input type="tel" class="respostas" placeholder="(14) 99999-9999">
+                        </div>
+
+                        <div>
+                            <label for="Localização">Localização</label>
+                            <input type="text" class="respostas" placeholder="Marília - SP">
+                        </div>
+
+                        <div>
+                            <label for="Assunto">Assunto</label>
+                            <input type="text" class="respostas" placeholder="Assunto da mensagem">
+                        </div>
+
+                        <div>
+                            <label>Mensagem</label>
+                            <textarea class="respostas" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        <p id="msg"></p>
+
+                        <button id="botao">Enviar ►</button>
+                    </form>
+                </article>
+
+                <article class="esp-contato-info">
+                    <h2>Informações de Contato</h2>
+                    <div class="escritas">
+                        <p><span>E-mail:</span> contato@raizesdanatureza.com.br</p>
+                        <p><span>Telefone:</span> (14) 99999-9999</p>
+                        <p><span>Endereço:</span> Marília, SP, Brasil</p>
+                    </div>
+                </article>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="foot-dentro">
+            <div class="link-rapido">
+                <h3>Raízes da Natureza</h3>
+                <p>Conectando você com a autenticidade do artesanato indígena brasileiro. Preservando recursos e
+                    apoiando comunidades.</p>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="tela_inicio.html">Início</a></li>
+                    <li><a href="tela_produtos.html">Produtos</a></li>
+                    <li><a href="tela_cultura.html">Cultura</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Contato</h4>
+                <p>Marília, SP, Brasil</p>
+                <p>(14) 99999-9999</p>
+                <p><a href="tela_contato.html">contato@raizesdanatureza.com.br</a></p>
+            </div>
+        </div>
+        <div class="chao">
+            <p>© 2025 Raízes da Natureza. Todos os direitos reservados.</p>
+            <p>Desenvolvido com respeito à cultura indígena brasileira</p>
+        </div>
+    </footer>
+
+    <script src="js/sla.js"></script>
+    <script src="js/contato.js"></script>
+
+</body>
+
+</html>

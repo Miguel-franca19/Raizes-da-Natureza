@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!--Desnvolvido por
+    Miguel França e Luis Otávio
+    1°DS    Esperamos que goste...-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Raízes da Natureza</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/produtinhos.css">
+    <link rel="shortcut icon" href="img/logos/logo-sem-fundo.png">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="logo-header">
+            <img src="img/logos/logo-sem-fundo.png" alt="Raízes da Natureza">
+            <div class="logo-escrita-header">
+                <h3>Raízes da Natureza</h3>
+                <h4>Vestimentas e produtos indígenas</h4>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-list" id="sopataqui">
+                <li><a href="tela_inicio.html">Início</a></li>
+                <li><a href="tela_produtos.html">Produtos</a></li>
+                <li><a href="tela_cultura.html">Cultura</a></li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="tela_contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="btns">
+
+
+            <a href="index.html">
+                <button id="entrar">Entrar</button>
+            </a>
+            <a href="tela_carrinho.html" id="carrinho">
+                <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+            </a>
+        </div>
+
+        <div class="hamb">
+            <button onclick="menuShow()"><img class="icon-menu" src="img/icones/menu.png" alt=""></button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-iten"><a href="tela_inicio.html">Início</a></li>
+                <li class="nav-iten"><a href="tela_produtos.html">Produtos</a></li>
+                <li class="nav-iten"><a href="tela_cultura.html">Cultura</a></li>
+                <li class="nav-iten"><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li class="nav-iten"><a href="tela_contato.html">Contato</a></li>
+            </ul>
+
+            <div class="btns">
+
+
+                <a href="index.html">
+                    <button id="entrar">Entrar</button>
+                </a>
+                <a href="tela_carrinho.html" id="carrinho">
+                    <img src="img/icones/carrinho.png" alt="Carrinho de compras">
+                </a>
+            </div>
+
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="tela-blur" id="obrigado">
+            <div class="agradecimento" id="mensagem">
+            </div>
+
+        </div>
+        <section class="intro">
+            <div class="conteudo">
+                <p class="btn-verde">Explore a originalidade artesanal</p>
+                <h1>Diversidade de <span class="intro-destaque">Produtos artesanais</span> </h1>
+                <p class="mini_txt">
+                    Descubra nossa coleção completa de produtos artesanais indígenas brasileiros</p>
+
+                <div class="botoes-intro">
+                    <a href="tela_produtos.html"><button class="btn-marrom">Explorar Cultura →</button></a>
+                    <a href="sobre_nos.html"><button class="btn-claro">Conheça mais sobre nós</button></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sec-filtro">
+            <div class="conteudo-filtro">
+                <div class="letreiro-filtro">
+                    <h2><span class="destaque_corbosta">Catálogo</span></h2>
+                    <p class="mini_txtx">
+                        Descubra a beleza e autenticidade do artesanato indígena brasileiro.
+                        Cada peça é única e carrega consigo séculos de tradição e sabedoria ancestral.
+                    </p>
+                </div>
+
+                <article class="espaco-filtro">
+                    <div class="title-filtro">
+                        <img src="img/icones/icon-filtro.png" alt="Ícone de filtro">
+                        <h3>Filtros</h3>
+                    </div>
+
+                    <div class="filtros">
+                        <div class="filtro-buscar">
+                            <label>Buscar</label>
+                            <input id="resposta" type="text" placeholder="nome, descrição...">
+                        </div>
+
+                        <div class="filtro-categorias">
+                            <label>Categorias</label>
+                            <select id="escolha">
+                                <option>Todas as categorias</option>
+                                <option>Cerâmica</option>
+                                <option>Joias</option>
+                                <option>Adereços</option>
+                                <option>Decoração</option>
+                                <option>Cestas</option>
+                            </select>
+                        </div>
+                    </div>
+                </article>
+
+
+                <p class="produtos-encontrados"><span id="n_prod">0</span> produtos encontrados</p>
+            </div>
+        </section>
+
+
+
+        <section class="produtos-lista">
+            <div class="card-produtos">
+
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 1/img 1.webp" alt="Boneca Ritxoko - Karajá">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Boneca Ritxoko - Karajá</h3>
+                            <p class="descricao">Bonecas Ritxoko, artesanato tradicional do povo Karajá, moldadas em
+                                argila e pintadas com...</p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 89,90</p>
+                            <span class="categoria">Cerâmica</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="boneca_ritxoko.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 2/img 1.webp"
+                            alt="Gargantilha de Sementes - Pataxó">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Gargantilha de Sementes - Pataxó</h3>
+                            <p class="descricao">As sementes usadas pelas artesãs Pataxó são combinadas para criar
+                                bijuterias
+                                únicas...</p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 45,90</p>
+                            <span class="categoria">Joias</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="gargantilha_de_sementes.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 5/img 1.webp" alt="Rede de Tecelagem - Guajajara">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Rede de Tecelagem - Guajajara</h3>
+                            <p class="descricao">As redes produzidas pelo povo Guajajara são feitas através de técnicas
+                                tradicionais...</p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 1808,90</p>
+                            <span class="categoria">Decoração</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="rede_de_tecelagem.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 4/img 2.webp" alt="Brincos de Miçangas - Kayapó">
+                    </div>
+
+                    <div class="card-prod-info">
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Brincos de Miçangas - Kayapó</h3>
+                            <p class="descricao">Joias Mebengokré (Kayapó), feitas à mão com miçangas de vidro e
+                                nylon...</p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 65.90</p>
+                            <span class="categoria">Adereços</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="brincos_de_miçangas.html">
+                                <button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver
+                                </button>
+                            </a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 3/img 1.webp" alt="Cesto Wii -Yanomami">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Cesto Wii -Yanomami</h3>
+                            <p class="descricao">O cesto wɨɨa, do povo Yanomami, é trançado à mão em cipó titica com
+                                detalhes únicos
+                            </p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 299,90</p>
+                            <span class="categoria">Cestas</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="cesto_wii.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 6/img 1.webp" alt="Tamanduá de Cerâmica | Waurá">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Tamanduá de Cerâmica | Waurá</h3>
+                            <p class="descricao">As artesãs Waurá produzem cerâmicas feitas à mão em formatos de
+                                animais...</p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 168,00</p>
+                            <span class="categoria">Cerâmica</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="tamandua_de_ceramica.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 7/img 2.webp" alt="Pulseira Elástica | Waurá">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Pulseira Elástica | Waurá</h3>
+                            <p class="descricao">As artesãs do povo Waurá, da Aldeia Ulupuwene, dedicam até três dias
+                                para produzir cada peça feita
+                                com miçangas...
+                            </p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 168,00</p>
+                            <span class="categoria">Adereços</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="pulseira_elastica.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mini_card-desque">
+                    <div class="mini_card-destaque-img">
+                        <img class="img-prod" src="img/produtos/prod 8/img 1.webp"
+                            alt="Cesto com tampa | Teçume da Amazônia">
+                    </div>
+
+                    <div class="card-prod-info">
+
+                        <div class="card-prod-titles">
+                            <h3 class="nome">Cesto com tampa | Teçume da Amazônia</h3>
+                            <p class="descricao">As artesãs ou teçumeiras, criam lindas peças a partir dos...
+                            </p>
+                        </div>
+
+                        <div class="info-prods">
+                            <p class="preco">R$ 125,80</p>
+                            <span class="categoria">Cestas</span>
+                        </div>
+
+                        <div class="acoes-card">
+                            <a href="cesto_com_tampa.html"><button class="btn-ver">
+                                    <img src="img/icones/icon-olho.png" alt="Olho">
+                                    Ver</button></a>
+                            <button class="btn-add">
+                                <img src="img/icones/carrinho.png" alt="carrinho">
+                                Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="foot-dentro">
+            <div class="link-rapido">
+                <h3>Raízes da Natureza</h3>
+                <p>Conectando você com a autenticidade do artesanato indígena brasileiro. Preservando recursos e
+                    apoiando comunidades.</p>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="tela_inicio.html">Início</a></li>
+                    <li><a href="tela_produtos.html">Produtos</a></li>
+                    <li><a href="tela_cultura.html">Cultura</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+
+            <div class="link-rapido">
+                <h4>Contato</h4>
+                <p>Marília, SP, Brasil</p>
+                <p>(14) 99999-9999</p>
+                <p><a href="tela_contato.html">contato@raizesdanatureza.com.br</a></p>
+            </div>
+        </div>
+        <div class="chao">
+            <p>© 2025 Raízes da Natureza. Todos os direitos reservados.</p>
+            <p>Desenvolvido com respeito à cultura indígena brasileira</p>
+        </div>
+    </footer>
+
+
+    <script src="js/sla.js"></script>
+    <script src="js/pag_prod.js"></script>
+    <script src="js/carrinho.js"></script>
+
+
+</body>
+
+</html>
