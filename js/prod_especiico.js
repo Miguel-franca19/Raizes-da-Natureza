@@ -1,4 +1,7 @@
 //miguel frança
+//não tem mais necessidade desse código (por enquanto)
+
+/*
 
 const but = document.getElementById("btn-add");
 const tela = document.getElementById("obrigado");
@@ -35,3 +38,4 @@ but.addEventListener("click", function () {
 
     mostrarMensagem();
 });
+*/

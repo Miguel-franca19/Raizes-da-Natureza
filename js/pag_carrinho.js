@@ -20,7 +20,7 @@ function ativarBotao() {
     btn.style.opacity = "1";
     btn.href = "tela_checkout.html"
     btn.innerText = "Finalizar compra"
-    
+
 }
 
 function desativarBotao() {
@@ -28,7 +28,7 @@ function desativarBotao() {
     btn.style.opacity = "0.5";
     btn.href = "#"
     btn.innerText = "Sem produtos adicionados"
-    
+
 }
 
 function formatarPreco(valor) {
@@ -86,7 +86,7 @@ if (nome && preco && img) {
         localStorage.setItem("precoTotal", totalFormatado);
     }
 
-    btnDiminuir.addEventListener("click", function() {
+    btnDiminuir.addEventListener("click", function () {
         if (inputQtd.value > 1) {
             inputQtd.value--;
             atualizarTotais();
@@ -110,14 +110,14 @@ if (nome && preco && img) {
         }
     });
 
-    btnAumentar.addEventListener("click", function() {
+    btnAumentar.addEventListener("click", function () {
         inputQtd.value++;
         atualizarTotais();
     });
 
     inputQtd.addEventListener("input", atualizarTotais);
 
-    btnExcluir.addEventListener("click", function() {
+    btnExcluir.addEventListener("click", function () {
         localStorage.removeItem("nomeProduto");
         localStorage.removeItem("precoProduto");
         localStorage.removeItem("imgProduto");
