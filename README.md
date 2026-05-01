@@ -127,12 +127,12 @@ Por ser um projeto estático, basta abrir os arquivos diretamente no navegador:
 
 ---
 
-## 👥 Autores
+## **Autores**
 
-| [<img src="https://github.com/Miguel-franca19.png" width="80" style="border-radius:50%"/>](https://github.com/Miguel-franca19) | [<img src="https://github.com/LuisOtavioSalesMendes.png" width="80" style="border-radius:50%"/>](https://github.com/LuisOtavioSalesMendes) |
+| [<img src="https://github.com/byFranca.png" width="80" style="border-radius:50%"/>](https://github.com/Miguel-franca19) | [<img src="https://github.com/LuisOtavioSalesMendes.png" width="80" style="border-radius:50%"/>](https://github.com/LuisOtavioSalesMendes) |
 |:---:|:---:|
 | **Miguel França** | **Luis Otávio** |
-| [github.com/Miguel-franca19](https://github.com/Miguel-franca19) | [github.com/LuisOtavioSalesMendes](https://github.com/LuisOtavioSalesMendes) |
+| [github.com/byFranca](https://github.com/byFranca) | [github.com/LuisOtavioSalesMendes](https://github.com/LuisOtavioSalesMendes) |
 
 ---
 
