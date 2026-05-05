@@ -13,12 +13,16 @@ function ativarBotao() {
     btn.disabled = false;
     btn.style.opacity = "1";
     btn.innerText = "Finalizar compra";
+    btn.setAttribute("href", "tela_checkout.html");
+    btn.style.cursor = "pointer";
 }
 
 function desativarBotao() {
     btn.disabled = true;
     btn.style.opacity = "0.5";
     btn.innerText = "Sem produtos adicionados";
+    btn.removeAttribute("href");
+    btn.style.cursor = "not-allowed";
 }
 
 function atualizarTotalGeral() {
