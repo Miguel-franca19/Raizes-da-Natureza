@@ -1,5 +1,5 @@
 //Miguel França
-const carrinho = [];
+const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
 const tela = document.getElementById("obrigado");
 const mensagem = document.getElementById("mensagem");
@@ -16,27 +16,30 @@ cardProds.forEach(prod => {
     const btnAdd = prod.querySelector(".btn-add");
 
     btnAdd.addEventListener("click", function () {
-        const nomeProd = prod.querySelector(".nome").innerHTML; //nome do produto
-        const precoProd = prod.querySelector(".preco").innerHTML;   //preco do produto
+        const idProd = parseInt(prod.getAttribute("id"));
+        const nomeProd = prod.querySelector(".nome").textContent; //nome do produto
+        const precoProd = parseFloat(prod.querySelector(".preco span").textContent);   //preco do produto no formato de float
         const imgProd = prod.querySelector("img").getAttribute("src");  //imagem (src)
-        console.log(nomeProd);
-        console.log(precoProd);
-        console.log(imgProd);
+        console.log(precoProd)
 
-        localStorage.setItem("nomeProduto", nomeProd.textContent);
-        localStorage.setItem("precoProduto", precoProd.textContent);
-        localStorage.setItem("imgProduto", imgProd);
+        let verificaSeJaExiste = verificarProdutoExistente(idProd);
+        if (verificaSeJaExiste) {
+            verificaSeJaExiste.quantidade++;
+        } else {
+            carrinho.push({ id: idProd, nome: nomeProd, preco: precoProd, imgSrc: imgProd, quantidade: 1 });
+        }
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
         mensagem.innerHTML = `
         <h2>Produto Adicionado ao carrinho</h2>
-                <p>O produtos <span>${nomeProd.textContent}</span> foi adicionado ao carrinho!</p>
-                <p class="alert">
-                    Aviso importante: nosso carrinho é meio humilde e só aguenta <strong>1 item</strong> por vez kkkkk.
-                    Adicionou outro? O primeiro evaporou no ar, tipo mágica (ou bug, vai saber...).
-                </p>
+                <p>O produtos <span>${nomeProd}</span> foi adicionado ao carrinho!</p>
                 <button class="btn-fechar" onclick="esconderMensagem()">Fechar</button>
         `;
-
-    
+        mostrarMensagem()
     });
 });
+
+function verificarProdutoExistente(idSelecionado) {
+    return carrinho.find(elemento => elemento.id === idSelecionado);
+}
