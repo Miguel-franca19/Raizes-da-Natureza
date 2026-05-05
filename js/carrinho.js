@@ -20,7 +20,6 @@ cardProds.forEach(prod => {
         const nomeProd = prod.querySelector(".nome").textContent; //nome do produto
         const precoProd = parseFloat(prod.querySelector(".preco span").textContent);   //preco do produto no formato de float
         const imgProd = prod.querySelector("img").getAttribute("src");  //imagem (src)
-        console.log(precoProd)
 
         let verificaSeJaExiste = verificarProdutoExistente(idProd);
         if (verificaSeJaExiste) {
@@ -28,6 +27,8 @@ cardProds.forEach(prod => {
         } else {
             carrinho.push({ id: idProd, nome: nomeProd, preco: precoProd, imgSrc: imgProd, quantidade: 1 });
         }
+
+        console.log(carrinho);
 
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
 
